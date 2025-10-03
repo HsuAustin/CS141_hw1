@@ -45,7 +45,7 @@ class Triangle extends Shape {
         return base + ", " + height;
     }
     double area() {
-        return (base * height) / 2.0;
+        return (base * height) / 2;
     }
     void draw() {
         System.out.println("        *   ");
@@ -143,8 +143,8 @@ class Picture {
 
 public class mainClass {
     public static void main(String[] args) {
-        int arg1 = Integer.parseInt(args[0]);
-        int arg2 = Integer.parseInt(args[1]);
+        int arg1 = Integer.valueOf(args[0]);
+        int arg2 = Integer.valueOf(args[1]);
         int arg3 = arg1 - 1;
         int arg4 = arg2 - 1;
         Picture pic = new Picture();
