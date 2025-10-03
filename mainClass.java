@@ -106,10 +106,10 @@ class Rectangle extends Square {
 }
 
 class ListNode {
-    Shape data;
+    Shape shape;
     ListNode next;
-    ListNode(Shape data, ListNode next) {
-        this.data = data;
+    ListNode(Shape shape, ListNode next) {
+        this.shape = shape;
         this.next = next;
     }
 }
@@ -124,18 +124,18 @@ class Picture {
     }
     void printAll() {
         for (ListNode shape_node = head; shape_node != null; shape_node = shape_node.next) {
-            shape_node.data.print();
+            shape_node.shape.print();
         }
     } 
     void drawAll() {
         for (ListNode shape_node = head; shape_node != null; shape_node = shape_node.next) {
-            shape_node.data.draw();
+            shape_node.shape.draw();
         }
     }
     double totalArea() {
         double sum_area = 0.0;
         for (ListNode shape_node = head; shape_node != null; shape_node = shape_node.next) {
-            sum_area += shape_node.data.area();
+            sum_area += shape_node.shape.area();
         }
         return sum_area;
     }
