@@ -155,9 +155,7 @@ public class mainClass {
         pic.add(new Circle("SecondCircle", arg3));
         pic.add(new Circle("FirstCircle", arg1));
         pic.add(new Triangle("SecondTriangle", arg3, arg4));
-        pic.add(new Triangle("FirstTriangle", arg1, arg2));
-        pic.printAll();
-        pic.drawAll();
-        System.out.println("Total : " + pic.totalArea());
+       
     }
 }
+
